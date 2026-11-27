@@ -1,5 +1,25 @@
-<h1>FullStack Senac</h1>
+<header style="background: #1976d2; color: white; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;">
+    <h1 style="margin: 0; font-size: 22px;">🛡️ Portal dos Heróis (SPA)</h1>
+    
+    <!-- Menu de navegação declarativa com routerLink -->
+    <nav style="display: flex; gap: 12px;">
+      <a mat-button routerLink="/herois" routerLinkActive="link-ativo" style="color: white;">
+        <mat-icon>list</mat-icon> Catálogo
+      </a>
+      <a mat-button routerLink="/sobre" routerLinkActive="link-ativo" style="color: white;">
+        <mat-icon>info</mat-icon> Sobre
+      </a>
+    </nav>
+  </header>
+  
+  <main style="padding: 20px; max-width: 1100px; margin: 0 auto;">
+    <router-outlet></router-outlet>
+  </main>
+  
 
+<!-- Rodapé fixo em todas as páginas -->
+<footer style="text-align: center; padding: 16px; color: #666; border-top: 1px solid #ddd;">
+<p>2026 Senac RJ - Formação Full-Stack</p>
+</footer>
 
-<app-hero-list></app-hero-list>
   
